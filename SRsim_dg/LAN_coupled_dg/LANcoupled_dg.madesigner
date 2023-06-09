@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_wXGZA1NjEeC9kZvO6flITg" defined="true" sourceFileRelativePath="LANcoupled_dg.ma">
+    <ports xmi:type="CoupledPort" xmi:id="_wXGZBFNjEeC9kZvO6flITg" portName="LANOut" portType="OUTPUT_PORT" incomingLinks="_wXGZf1NjEeC9kZvO6flITg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_wXGZBVNjEeC9kZvO6flITg" portName="packetsGenerated1" portType="OUTPUT_PORT" incomingLinks="_wXGZgFNjEeC9kZvO6flITg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_wXGZBlNjEeC9kZvO6flITg" portName="packetsGenerated2" portType="OUTPUT_PORT" incomingLinks="_wXGZgVNjEeC9kZvO6flITg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_wXGZB1NjEeC9kZvO6flITg" portName="packetsGenerated3" portType="OUTPUT_PORT" incomingLinks="_wXGZglNjEeC9kZvO6flITg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_wXGZCFNjEeC9kZvO6flITg" portName="packetsReceived1" portType="OUTPUT_PORT" incomingLinks="_wXGZg1NjEeC9kZvO6flITg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_wXGZCVNjEeC9kZvO6flITg" portName="packetsReceived2" portType="OUTPUT_PORT" incomingLinks="_wXGZhFNjEeC9kZvO6flITg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_wXGZClNjEeC9kZvO6flITg" portName="packetsReceived3" portType="OUTPUT_PORT" incomingLinks="_wXGZhVNjEeC9kZvO6flITg"/>
+    <ports xmi:type="CoupledPort" xmi:id="_wXGZC1NjEeC9kZvO6flITg" portName="LANIn" outgoingLinks="_wXGZflNjEeC9kZvO6flITg"/>
+    <coupledModels xmi:type="CoupledModelInstance" xmi:id="_wXGZDFNjEeC9kZvO6flITg" instanceName="LAN">
+      <modelType xmi:type="CoupledModelType" xmi:id="_wXGZDVNjEeC9kZvO6flITg" modelName="LAN">
+        <ports xmi:type="CoupledPort" xmi:id="_wXGZDlNjEeC9kZvO6flITg" portName="LANOut" portType="OUTPUT_PORT" incomingLinks="_wXGZcVNjEeC9kZvO6flITg" outgoingLinks="_wXGZf1NjEeC9kZvO6flITg"/>
+        <ports xmi:type="CoupledPort" xmi:id="_wXGZD1NjEeC9kZvO6flITg" portName="packetsGenerated1" portType="OUTPUT_PORT" incomingLinks="_wXGZclNjEeC9kZvO6flITg" outgoingLinks="_wXGZgFNjEeC9kZvO6flITg"/>
+        <ports xmi:type="CoupledPort" xmi:id="_wXGZEFNjEeC9kZvO6flITg" portName="packetsGenerated2" portType="OUTPUT_PORT" incomingLinks="_wXGZc1NjEeC9kZvO6flITg" outgoingLinks="_wXGZgVNjEeC9kZvO6flITg"/>
+        <ports xmi:type="CoupledPort" xmi:id="_wXGZEVNjEeC9kZvO6flITg" portName="packetsGenerated3" portType="OUTPUT_PORT" incomingLinks="_wXGZdFNjEeC9kZvO6flITg" outgoingLinks="_wXGZglNjEeC9kZvO6flITg"/>
+        <ports xmi:type="CoupledPort" xmi:id="_wXGZElNjEeC9kZvO6flITg" portName="packetsReceived1" portType="OUTPUT_PORT" incomingLinks="_wXGZdVNjEeC9kZvO6flITg" outgoingLinks="_wXGZg1NjEeC9kZvO6flITg"/>
+        <ports xmi:type="CoupledPort" xmi:id="_wXGZE1NjEeC9kZvO6flITg" portName="packetsReceived2" portType="OUTPUT_PORT" incomingLinks="_wXGZdlNjEeC9kZvO6flITg" outgoingLinks="_wXGZhFNjEeC9kZvO6flITg"/>
+        <ports xmi:type="CoupledPort" xmi:id="_wXGZFFNjEeC9kZvO6flITg" portName="packetsReceived3" portType="OUTPUT_PORT" incomingLinks="_wXGZd1NjEeC9kZvO6flITg" outgoingLinks="_wXGZhVNjEeC9kZvO6flITg"/>
+        <ports xmi:type="CoupledPort" xmi:id="_wXGZFVNjEeC9kZvO6flITg" portName="LANIn" incomingLinks="_wXGZflNjEeC9kZvO6flITg" outgoingLinks="_wXGZcFNjEeC9kZvO6flITg"/>
+        <coupledModels xmi:type="CoupledModelInstance" xmi:id="_wXGZFlNjEeC9kZvO6flITg" instanceName="workstation1">
+          <modelType xmi:type="CoupledModelType" xmi:id="_wXGZF1NjEeC9kZvO6flITg" modelName="workstation1">
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZGFNjEeC9kZvO6flITg" portName="packetOut" portType="OUTPUT_PORT" outgoingLinks="_wXGZeFNjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZGVNjEeC9kZvO6flITg" portName="packetsGenerated" portType="OUTPUT_PORT" outgoingLinks="_wXGZclNjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZGlNjEeC9kZvO6flITg" portName="packetsReceived" portType="OUTPUT_PORT" outgoingLinks="_wXGZdVNjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZG1NjEeC9kZvO6flITg" portName="packetIn" incomingLinks="_wXGZe1NjEeC9kZvO6flITg"/>
+            <atomicModels xmi:type="AtomicModelInstance" xmi:id="_wXGZHFNjEeC9kZvO6flITg" instanceName="source1">
+              <modelType xmi:type="CPPAtomicModelType" xmi:id="_wXGZHVNjEeC9kZvO6flITg" modelName="Source" sourceFileRelativePath="Source.cpp"/>
+              <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_wXGZHlNjEeC9kZvO6flITg" name="source" value="source1.cdd"/>
+            </atomicModels>
+            <atomicModels xmi:type="AtomicModelInstance" xmi:id="_wXGZH1NjEeC9kZvO6flITg" instanceName="sink1">
+              <modelType xmi:type="CPPAtomicModelType" xmi:id="_wXGZIFNjEeC9kZvO6flITg" modelName="Sink" sourceFileRelativePath="Sink.cpp"/>
+              <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_wXGZIVNjEeC9kZvO6flITg" name="source" value="sink1.cdd"/>
+            </atomicModels>
+          </modelType>
+        </coupledModels>
+        <coupledModels xmi:type="CoupledModelInstance" xmi:id="_wXGZIlNjEeC9kZvO6flITg" instanceName="workstation2">
+          <modelType xmi:type="CoupledModelType" xmi:id="_wXGZI1NjEeC9kZvO6flITg" modelName="workstation2">
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZJFNjEeC9kZvO6flITg" portName="packetOut" portType="OUTPUT_PORT" outgoingLinks="_wXGZeVNjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZJVNjEeC9kZvO6flITg" portName="packetsGenerated" portType="OUTPUT_PORT" outgoingLinks="_wXGZc1NjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZJlNjEeC9kZvO6flITg" portName="packetsReceived" portType="OUTPUT_PORT" outgoingLinks="_wXGZdlNjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZJ1NjEeC9kZvO6flITg" portName="packetIn" incomingLinks="_wXGZfFNjEeC9kZvO6flITg"/>
+            <atomicModels xmi:type="AtomicModelInstance" xmi:id="_wXGZKFNjEeC9kZvO6flITg" instanceName="source2">
+              <modelType xmi:type="CPPAtomicModelType" xmi:id="_wXGZKVNjEeC9kZvO6flITg" modelName="Source" sourceFileRelativePath="Source.cpp"/>
+              <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_wXGZKlNjEeC9kZvO6flITg" name="source" value="source2.cdd"/>
+            </atomicModels>
+            <atomicModels xmi:type="AtomicModelInstance" xmi:id="_wXGZK1NjEeC9kZvO6flITg" instanceName="sink2">
+              <modelType xmi:type="CPPAtomicModelType" xmi:id="_wXGZLFNjEeC9kZvO6flITg" modelName="Sink" sourceFileRelativePath="Sink.cpp"/>
+              <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_wXGZLVNjEeC9kZvO6flITg" name="source" value="sink2.cdd"/>
+            </atomicModels>
+          </modelType>
+        </coupledModels>
+        <coupledModels xmi:type="CoupledModelInstance" xmi:id="_wXGZLlNjEeC9kZvO6flITg" instanceName="workstation3">
+          <modelType xmi:type="CoupledModelType" xmi:id="_wXGZL1NjEeC9kZvO6flITg" modelName="workstation3">
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZMFNjEeC9kZvO6flITg" portName="packetOut" portType="OUTPUT_PORT" outgoingLinks="_wXGZelNjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZMVNjEeC9kZvO6flITg" portName="packetsGenerated" portType="OUTPUT_PORT" outgoingLinks="_wXGZdFNjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZMlNjEeC9kZvO6flITg" portName="packetsReceived" portType="OUTPUT_PORT" outgoingLinks="_wXGZd1NjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZM1NjEeC9kZvO6flITg" portName="packetIn" incomingLinks="_wXGZfVNjEeC9kZvO6flITg"/>
+            <atomicModels xmi:type="AtomicModelInstance" xmi:id="_wXGZNFNjEeC9kZvO6flITg" instanceName="source3">
+              <modelType xmi:type="CPPAtomicModelType" xmi:id="_wXGZNVNjEeC9kZvO6flITg" modelName="Source" sourceFileRelativePath="Source.cpp"/>
+              <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_wXGZNlNjEeC9kZvO6flITg" name="source" value="source3.cdd"/>
+            </atomicModels>
+            <atomicModels xmi:type="AtomicModelInstance" xmi:id="_wXGZN1NjEeC9kZvO6flITg" instanceName="sink3">
+              <modelType xmi:type="CPPAtomicModelType" xmi:id="_wXGZOFNjEeC9kZvO6flITg" modelName="Sink" sourceFileRelativePath="Sink.cpp"/>
+              <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_wXGZOVNjEeC9kZvO6flITg" name="source" value="sink3.cdd"/>
+            </atomicModels>
+          </modelType>
+        </coupledModels>
+        <coupledModels xmi:type="CoupledModelInstance" xmi:id="_wXGZOlNjEeC9kZvO6flITg" instanceName="LANswitch_coupled">
+          <modelType xmi:type="CoupledModelType" xmi:id="_wXGZO1NjEeC9kZvO6flITg" modelName="LANswitch_coupled">
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZPFNjEeC9kZvO6flITg" portName="switchOut1" portType="OUTPUT_PORT" outgoingLinks="_wXGZe1NjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZPVNjEeC9kZvO6flITg" portName="switchOut2" portType="OUTPUT_PORT" outgoingLinks="_wXGZfFNjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZPlNjEeC9kZvO6flITg" portName="switchOut3" portType="OUTPUT_PORT" outgoingLinks="_wXGZfVNjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZP1NjEeC9kZvO6flITg" portName="gateWay" portType="OUTPUT_PORT" outgoingLinks="_wXGZcVNjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZQFNjEeC9kZvO6flITg" portName="switchIn1" incomingLinks="_wXGZeFNjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZQVNjEeC9kZvO6flITg" portName="switchIn2" incomingLinks="_wXGZeVNjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZQlNjEeC9kZvO6flITg" portName="switchIn3" incomingLinks="_wXGZelNjEeC9kZvO6flITg"/>
+            <ports xmi:type="CoupledPort" xmi:id="_wXGZQ1NjEeC9kZvO6flITg" portName="switchIn4" incomingLinks="_wXGZcFNjEeC9kZvO6flITg"/>
+            <atomicModels xmi:type="AtomicModelInstance" xmi:id="_wXGZRFNjEeC9kZvO6flITg" instanceName="queue1">
+              <modelType xmi:type="BuiltinModelType" xmi:id="_wXGZRVNjEeC9kZvO6flITg" modelName="Queue" defined="true" sourceFileRelativePath="queue.cpp">
+                <ports xmi:type="InputAtomicPort" xmi:id="_wXGZRlNjEeC9kZvO6flITg" portName="in"/>
+                <ports xmi:type="InputAtomicPort" xmi:id="_wXGZR1NjEeC9kZvO6flITg" portName="stop"/>
+                <ports xmi:type="InputAtomicPort" xmi:id="_wXGZSFNjEeC9kZvO6flITg" portName="done"/>
+                <ports xmi:type="OutputAtomicPort" xmi:id="_wXGZSVNjEeC9kZvO6flITg" portName="out" portType="OUTPUT_PORT"/>
+                <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_wXGZSlNjEeC9kZvO6flITg" name="preparation"/>
+              </modelType>
+              <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_wXGZS1NjEeC9kZvO6flITg" name="preparation" value="00:00:03:000"/>
+            </atomicModels>
+            <atomicModels xmi:type="AtomicModelInstance" xmi:id="_wXGZTFNjEeC9kZvO6flITg" instanceName="switch1">
+              <modelType xmi:type="CPPAtomicModelType" xmi:id="_wXGZTVNjEeC9kZvO6flITg" modelName="LANSwitch" sourceFileRelativePath="LANSwitch.cpp"/>
+              <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_wXGZTlNjEeC9kZvO6flITg" name="source" value="LANswitch.cdd"/>
+            </atomicModels>
+            <atomicModels xmi:type="AtomicModelInstance" xmi:id="_wXGZT1NjEeC9kZvO6flITg" instanceName="queue2">
+              <modelType xmi:type="BuiltinModelType" xmi:id="_wXGZUFNjEeC9kZvO6flITg" modelName="Queue" defined="true" sourceFileRelativePath="queue.cpp">
+                <ports xmi:type="InputAtomicPort" xmi:id="_wXGZUVNjEeC9kZvO6flITg" portName="in"/>
+                <ports xmi:type="InputAtomicPort" xmi:id="_wXGZUlNjEeC9kZvO6flITg" portName="stop"/>
+                <ports xmi:type="InputAtomicPort" xmi:id="_wXGZU1NjEeC9kZvO6flITg" portName="done"/>
+                <ports xmi:type="OutputAtomicPort" xmi:id="_wXGZVFNjEeC9kZvO6flITg" portName="out" portType="OUTPUT_PORT"/>
+                <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_wXGZVVNjEeC9kZvO6flITg" name="preparation"/>
+              </modelType>
+              <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_wXGZVlNjEeC9kZvO6flITg" name="preparation" value="00:00:03:000"/>
+            </atomicModels>
+            <atomicModels xmi:type="AtomicModelInstance" xmi:id="_wXGZV1NjEeC9kZvO6flITg" instanceName="switch2">
+              <modelType xmi:type="CPPAtomicModelType" xmi:id="_wXGZWFNjEeC9kZvO6flITg" modelName="LANSwitch" sourceFileRelativePath="LANSwitch.cpp"/>
+              <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_wXGZWVNjEeC9kZvO6flITg" name="source" value="LANswitch.cdd"/>
+            </atomicModels>
+            <atomicModels xmi:type="AtomicModelInstance" xmi:id="_wXGZWlNjEeC9kZvO6flITg" instanceName="queue3">
+              <modelType xmi:type="BuiltinModelType" xmi:id="_wXGZW1NjEeC9kZvO6flITg" modelName="Queue" defined="true" sourceFileRelativePath="queue.cpp">
+                <ports xmi:type="InputAtomicPort" xmi:id="_wXGZXFNjEeC9kZvO6flITg" portName="in"/>
+                <ports xmi:type="InputAtomicPort" xmi:id="_wXGZXVNjEeC9kZvO6flITg" portName="stop"/>
+                <ports xmi:type="InputAtomicPort" xmi:id="_wXGZXlNjEeC9kZvO6flITg" portName="done"/>
+                <ports xmi:type="OutputAtomicPort" xmi:id="_wXGZX1NjEeC9kZvO6flITg" portName="out" portType="OUTPUT_PORT"/>
+                <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_wXGZYFNjEeC9kZvO6flITg" name="preparation"/>
+              </modelType>
+              <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_wXGZYVNjEeC9kZvO6flITg" name="preparation" value="00:00:03:000"/>
+            </atomicModels>
+            <atomicModels xmi:type="AtomicModelInstance" xmi:id="_wXGZYlNjEeC9kZvO6flITg" instanceName="switch3">
+              <modelType xmi:type="CPPAtomicModelType" xmi:id="_wXGZY1NjEeC9kZvO6flITg" modelName="LANSwitch" sourceFileRelativePath="LANSwitch.cpp"/>
+              <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_wXGZZFNjEeC9kZvO6flITg" name="source" value="LANswitch.cdd"/>
+            </atomicModels>
+            <atomicModels xmi:type="AtomicModelInstance" xmi:id="_wXGZZVNjEeC9kZvO6flITg" instanceName="queue4">
+              <modelType xmi:type="BuiltinModelType" xmi:id="_wXGZZlNjEeC9kZvO6flITg" modelName="Queue" defined="true" sourceFileRelativePath="queue.cpp">
+                <ports xmi:type="InputAtomicPort" xmi:id="_wXGZZ1NjEeC9kZvO6flITg" portName="in"/>
+                <ports xmi:type="InputAtomicPort" xmi:id="_wXGZaFNjEeC9kZvO6flITg" portName="stop"/>
+                <ports xmi:type="InputAtomicPort" xmi:id="_wXGZaVNjEeC9kZvO6flITg" portName="done"/>
+                <ports xmi:type="OutputAtomicPort" xmi:id="_wXGZalNjEeC9kZvO6flITg" portName="out" portType="OUTPUT_PORT"/>
+                <parameters xmi:type="AtomicModelTypeParameter" xmi:id="_wXGZa1NjEeC9kZvO6flITg" name="preparation"/>
+              </modelType>
+              <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_wXGZbFNjEeC9kZvO6flITg" name="preparation" value="00:00:03:00"/>
+            </atomicModels>
+            <atomicModels xmi:type="AtomicModelInstance" xmi:id="_wXGZbVNjEeC9kZvO6flITg" instanceName="switch4">
+              <modelType xmi:type="CPPAtomicModelType" xmi:id="_wXGZblNjEeC9kZvO6flITg" modelName="LANSwitch" sourceFileRelativePath="LANSwitch.cpp"/>
+              <parameters xmi:type="AtomicModelInstanceParameter" xmi:id="_wXGZb1NjEeC9kZvO6flITg" name="source" value="LANswitch.cdd"/>
+            </atomicModels>
+          </modelType>
+        </coupledModels>
+        <links xmi:type="CoupledLink" xmi:id="_wXGZcFNjEeC9kZvO6flITg" target="_wXGZQ1NjEeC9kZvO6flITg" source="_wXGZFVNjEeC9kZvO6flITg"/>
+        <links xmi:type="CoupledLink" xmi:id="_wXGZcVNjEeC9kZvO6flITg" target="_wXGZDlNjEeC9kZvO6flITg" source="_wXGZP1NjEeC9kZvO6flITg"/>
+        <links xmi:type="CoupledLink" xmi:id="_wXGZclNjEeC9kZvO6flITg" target="_wXGZD1NjEeC9kZvO6flITg" source="_wXGZGVNjEeC9kZvO6flITg"/>
+        <links xmi:type="CoupledLink" xmi:id="_wXGZc1NjEeC9kZvO6flITg" target="_wXGZEFNjEeC9kZvO6flITg" source="_wXGZJVNjEeC9kZvO6flITg"/>
+        <links xmi:type="CoupledLink" xmi:id="_wXGZdFNjEeC9kZvO6flITg" target="_wXGZEVNjEeC9kZvO6flITg" source="_wXGZMVNjEeC9kZvO6flITg"/>
+        <links xmi:type="CoupledLink" xmi:id="_wXGZdVNjEeC9kZvO6flITg" target="_wXGZElNjEeC9kZvO6flITg" source="_wXGZGlNjEeC9kZvO6flITg"/>
+        <links xmi:type="CoupledLink" xmi:id="_wXGZdlNjEeC9kZvO6flITg" target="_wXGZE1NjEeC9kZvO6flITg" source="_wXGZJlNjEeC9kZvO6flITg"/>
+        <links xmi:type="CoupledLink" xmi:id="_wXGZd1NjEeC9kZvO6flITg" target="_wXGZFFNjEeC9kZvO6flITg" source="_wXGZMlNjEeC9kZvO6flITg"/>
+        <links xmi:type="CoupledLink" xmi:id="_wXGZeFNjEeC9kZvO6flITg" target="_wXGZQFNjEeC9kZvO6flITg" source="_wXGZGFNjEeC9kZvO6flITg"/>
+        <links xmi:type="CoupledLink" xmi:id="_wXGZeVNjEeC9kZvO6flITg" target="_wXGZQVNjEeC9kZvO6flITg" source="_wXGZJFNjEeC9kZvO6flITg"/>
+        <links xmi:type="CoupledLink" xmi:id="_wXGZelNjEeC9kZvO6flITg" target="_wXGZQlNjEeC9kZvO6flITg" source="_wXGZMFNjEeC9kZvO6flITg"/>
+        <links xmi:type="CoupledLink" xmi:id="_wXGZe1NjEeC9kZvO6flITg" target="_wXGZG1NjEeC9kZvO6flITg" source="_wXGZPFNjEeC9kZvO6flITg"/>
+        <links xmi:type="CoupledLink" xmi:id="_wXGZfFNjEeC9kZvO6flITg" target="_wXGZJ1NjEeC9kZvO6flITg" source="_wXGZPVNjEeC9kZvO6flITg"/>
+        <links xmi:type="CoupledLink" xmi:id="_wXGZfVNjEeC9kZvO6flITg" target="_wXGZM1NjEeC9kZvO6flITg" source="_wXGZPlNjEeC9kZvO6flITg"/>
+      </modelType>
+    </coupledModels>
+    <links xmi:type="CoupledLink" xmi:id="_wXGZflNjEeC9kZvO6flITg" target="_wXGZFVNjEeC9kZvO6flITg" source="_wXGZC1NjEeC9kZvO6flITg"/>
+    <links xmi:type="CoupledLink" xmi:id="_wXGZf1NjEeC9kZvO6flITg" target="_wXGZBFNjEeC9kZvO6flITg" source="_wXGZDlNjEeC9kZvO6flITg"/>
+    <links xmi:type="CoupledLink" xmi:id="_wXGZgFNjEeC9kZvO6flITg" target="_wXGZBVNjEeC9kZvO6flITg" source="_wXGZD1NjEeC9kZvO6flITg"/>
+    <links xmi:type="CoupledLink" xmi:id="_wXGZgVNjEeC9kZvO6flITg" target="_wXGZBlNjEeC9kZvO6flITg" source="_wXGZEFNjEeC9kZvO6flITg"/>
+    <links xmi:type="CoupledLink" xmi:id="_wXGZglNjEeC9kZvO6flITg" target="_wXGZB1NjEeC9kZvO6flITg" source="_wXGZEVNjEeC9kZvO6flITg"/>
+    <links xmi:type="CoupledLink" xmi:id="_wXGZg1NjEeC9kZvO6flITg" target="_wXGZCFNjEeC9kZvO6flITg" source="_wXGZElNjEeC9kZvO6flITg"/>
+    <links xmi:type="CoupledLink" xmi:id="_wXGZhFNjEeC9kZvO6flITg" target="_wXGZCVNjEeC9kZvO6flITg" source="_wXGZE1NjEeC9kZvO6flITg"/>
+    <links xmi:type="CoupledLink" xmi:id="_wXGZhVNjEeC9kZvO6flITg" target="_wXGZClNjEeC9kZvO6flITg" source="_wXGZFFNjEeC9kZvO6flITg"/>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_wXQJ8FNjEeC9kZvO6flITg" type="DEVS" element="_wXGZA1NjEeC9kZvO6flITg" name="LANcoupled_dg.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_wXQJ8VNjEeC9kZvO6flITg"/>
+  </notation:Diagram>
+</xmi:XMI>

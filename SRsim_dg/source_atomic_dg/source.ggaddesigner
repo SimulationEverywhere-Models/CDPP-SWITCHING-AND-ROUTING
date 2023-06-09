@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <GGADAtomicModelType xmi:id="_CL9oQEnNEeCcQYJginSKnQ" defined="true" sourceFileRelativePath="source.cdd" initialState="_CL9oQ0nNEeCcQYJginSKnQ">
+    <ports xmi:type="OutputAtomicPort" xmi:id="_CL9oQUnNEeCcQYJginSKnQ" portName="packetOut" portType="OUTPUT_PORT"/>
+    <ports xmi:type="OutputAtomicPort" xmi:id="_CL9oQknNEeCcQYJginSKnQ" portName="packetsGenerated" portType="OUTPUT_PORT"/>
+    <states xmi:type="State" xmi:id="_CL9oQ0nNEeCcQYJginSKnQ" name="generate">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_CL9oREnNEeCcQYJginSKnQ" second="10"/>
+    </states>
+    <variables xmi:type="Variable" xmi:id="_CL9oRUnNEeCcQYJginSKnQ" name="packetNum">
+      <defaultValue xmi:type="Constant" xmi:id="_CL9oRknNEeCcQYJginSKnQ"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_CL9oR0nNEeCcQYJginSKnQ" name="sinkAddr">
+      <defaultValue xmi:type="Constant" xmi:id="_CL9oSEnNEeCcQYJginSKnQ"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_CL9oSUnNEeCcQYJginSKnQ" name="temp">
+      <defaultValue xmi:type="Constant" xmi:id="_CL9oSknNEeCcQYJginSKnQ" value="0"/>
+    </variables>
+    <links xmi:type="InternalTransition" xmi:id="_CL9oS0nNEeCcQYJginSKnQ" target="_CL9oQ0nNEeCcQYJginSKnQ" source="_CL9oQ0nNEeCcQYJginSKnQ">
+      <portValues xmi:type="PortValue" xmi:id="_CL9oTEnNEeCcQYJginSKnQ" port="_CL9oQUnNEeCcQYJginSKnQ" value="_CL9oR0nNEeCcQYJginSKnQ"/>
+      <portValues xmi:type="PortValue" xmi:id="_CL9oTUnNEeCcQYJginSKnQ" port="_CL9oQknNEeCcQYJginSKnQ" value="_CL9oRUnNEeCcQYJginSKnQ"/>
+      <actions xmi:type="Action" xmi:id="_CL9oTknNEeCcQYJginSKnQ" variable="_CL9oRUnNEeCcQYJginSKnQ" expression="_CL9oT0nNEeCcQYJginSKnQ">
+        <containedExpression xmi:type="AddFunction" xmi:id="_CL9oT0nNEeCcQYJginSKnQ" parameters="_CL9oRUnNEeCcQYJginSKnQ _CL9oUEnNEeCcQYJginSKnQ">
+          <containedParameters xmi:type="Constant" xmi:id="_CL9oUEnNEeCcQYJginSKnQ"/>
+        </containedExpression>
+      </actions>
+      <actions xmi:type="Action" xmi:id="_CL9oUUnNEeCcQYJginSKnQ" variable="_CL9oSUnNEeCcQYJginSKnQ" expression="_CL9oUknNEeCcQYJginSKnQ">
+        <containedExpression xmi:type="RandFunction" xmi:id="_CL9oUknNEeCcQYJginSKnQ" parameters="_CL9oU0nNEeCcQYJginSKnQ _CL9oVEnNEeCcQYJginSKnQ">
+          <containedParameters xmi:type="Constant" xmi:id="_CL9oU0nNEeCcQYJginSKnQ"/>
+          <containedParameters xmi:type="Constant" xmi:id="_CL9oVEnNEeCcQYJginSKnQ" value="11"/>
+        </containedExpression>
+      </actions>
+      <actions xmi:type="Action" xmi:id="_CL9oVUnNEeCcQYJginSKnQ" variable="_CL9oR0nNEeCcQYJginSKnQ" expression="_CL9oSUnNEeCcQYJginSKnQ"/>
+    </links>
+  </GGADAtomicModelType>
+  <notation:Diagram xmi:id="_CMQjMEnNEeCcQYJginSKnQ" type="DEVSGGAD" element="_CL9oQEnNEeCcQYJginSKnQ" name="source.ggaddesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_CMQjMUnNEeCcQYJginSKnQ"/>
+  </notation:Diagram>
+</xmi:XMI>

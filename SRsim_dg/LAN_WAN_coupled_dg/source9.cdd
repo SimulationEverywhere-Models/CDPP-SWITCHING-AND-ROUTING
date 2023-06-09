@@ -1,0 +1,9 @@
+[Top]
+out:packetOut packetsGenerated 
+var:packetNum sinkAddr temp 
+state:generate 
+initial:generate
+int:generate generate packetOut!sinkAddr packetsGenerated!sinkAddr {packetNum=Add(packetNum,1);sinkAddr=Round(Rand(1,11));}
+generate:00:00:19:00
+packetNum:1
+sinkAddr:1

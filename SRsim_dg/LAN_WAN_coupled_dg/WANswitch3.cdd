@@ -1,0 +1,48 @@
+[Top]
+in:switchIn 
+out:switchOut1 switchOut2 switchOut3 packetsDropped 
+var:A B C D E F G H I destAddr 
+state:idle active1 active7 active4 active10 active2 active3 active5 active6 active8 active9 
+initial:idle
+ext:idle active1 And(Less(Value(switchIn),99),Equal(Value(switchIn),A))?1{destAddr=Value(switchIn);}
+int:active1 idle switchOut1!destAddr 
+ext:idle idle Greater(Value(switchIn),99)?1
+ext:idle active7 And(Less(Value(switchIn),99),Equal(Value(switchIn),G))?1{destAddr=Value(switchIn);}
+int:active7 idle switchOut3!destAddr 
+ext:idle active4 And(Less(Value(switchIn),99),Equal(Value(switchIn),D))?1{destAddr=Value(switchIn);}
+int:active4 idle switchOut2!destAddr 
+ext:idle active10 And(Greater(Value(switchIn),9),Less(Value(switchIn),99))?1{destAddr=Value(switchIn);}
+int:active10 idle packetsDropped!destAddr 
+ext:idle active2 And(Less(Value(switchIn),99),Equal(Value(switchIn),B))?1{destAddr=Value(switchIn);}
+int:active2 idle switchOut1!destAddr 
+ext:idle active3 And(Less(Value(switchIn),99),Equal(Value(switchIn),C))?1{destAddr=Value(switchIn);}
+int:active3 idle switchOut1!destAddr 
+ext:idle active5 And(Less(Value(switchIn),99),Equal(Value(switchIn),E))?1{destAddr=Value(switchIn);}
+int:active5 idle switchOut2!destAddr 
+ext:idle active6 And(Less(Value(switchIn),99),Equal(Value(switchIn),F))?1{destAddr=Value(switchIn);}
+int:active6 idle switchOut2!destAddr 
+ext:idle active8 And(Less(Value(switchIn),99),Equal(Value(switchIn),H))?1{destAddr=Value(switchIn);}
+int:active8 idle switchOut3!destAddr 
+ext:idle active9 And(Less(Value(switchIn),99),Equal(Value(switchIn),I))?1{destAddr=Value(switchIn);}
+int:active9 idle switchOut3!destAddr 
+idle:99:99:99:99
+active1:00:00:01:00
+active7:00:00:01:00
+active4:00:00:01:00
+active10:00:00:01:00
+active2:00:00:01:00
+active3:00:00:01:00
+active5:00:00:01:00
+active6:00:00:01:00
+active8:00:00:01:00
+active9:00:00:01:00
+A:7
+B:8
+C:9
+D:1
+E:2
+F:3
+G:4
+H:5
+I:6
+destAddr:0

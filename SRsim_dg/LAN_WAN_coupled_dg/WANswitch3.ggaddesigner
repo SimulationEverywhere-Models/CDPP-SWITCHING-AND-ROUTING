@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <GGADAtomicModelType xmi:id="_r9o1IFSyEeCZd730U9rcFQ" defined="true" sourceFileRelativePath="WANswitch3.cdd" initialState="_r9o1JlSyEeCZd730U9rcFQ">
+    <ports xmi:type="InputAtomicPort" xmi:id="_r9o1IVSyEeCZd730U9rcFQ" portName="switchIn"/>
+    <ports xmi:type="OutputAtomicPort" xmi:id="_r9o1IlSyEeCZd730U9rcFQ" portName="switchOut1" portType="OUTPUT_PORT"/>
+    <ports xmi:type="OutputAtomicPort" xmi:id="_r9o1I1SyEeCZd730U9rcFQ" portName="switchOut2" portType="OUTPUT_PORT"/>
+    <ports xmi:type="OutputAtomicPort" xmi:id="_r9o1JFSyEeCZd730U9rcFQ" portName="switchOut3" portType="OUTPUT_PORT"/>
+    <ports xmi:type="OutputAtomicPort" xmi:id="_r9o1JVSyEeCZd730U9rcFQ" portName="packetsDropped" portType="OUTPUT_PORT"/>
+    <states xmi:type="State" xmi:id="_r9o1JlSyEeCZd730U9rcFQ" name="idle">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_r9o1J1SyEeCZd730U9rcFQ" hour="99" minute="99" second="99" millisecond="99"/>
+    </states>
+    <states xmi:type="State" xmi:id="_r9o1KFSyEeCZd730U9rcFQ" name="active1">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_r9o1KVSyEeCZd730U9rcFQ" second="1"/>
+    </states>
+    <states xmi:type="State" xmi:id="_r9o1KlSyEeCZd730U9rcFQ" name="active7">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_r9o1K1SyEeCZd730U9rcFQ" second="1"/>
+    </states>
+    <states xmi:type="State" xmi:id="_r9o1LFSyEeCZd730U9rcFQ" name="active4">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_r9o1LVSyEeCZd730U9rcFQ" second="1"/>
+    </states>
+    <states xmi:type="State" xmi:id="_r9o1LlSyEeCZd730U9rcFQ" name="active10">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_r9o1L1SyEeCZd730U9rcFQ" second="1"/>
+    </states>
+    <states xmi:type="State" xmi:id="_r9o1MFSyEeCZd730U9rcFQ" name="active2">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_r9o1MVSyEeCZd730U9rcFQ" second="1"/>
+    </states>
+    <states xmi:type="State" xmi:id="_r9o1MlSyEeCZd730U9rcFQ" name="active3">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_r9o1M1SyEeCZd730U9rcFQ" second="1"/>
+    </states>
+    <states xmi:type="State" xmi:id="_r9o1NFSyEeCZd730U9rcFQ" name="active5">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_r9o1NVSyEeCZd730U9rcFQ" second="1"/>
+    </states>
+    <states xmi:type="State" xmi:id="_r9o1NlSyEeCZd730U9rcFQ" name="active6">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_r9o1N1SyEeCZd730U9rcFQ" second="1"/>
+    </states>
+    <states xmi:type="State" xmi:id="_r9o1OFSyEeCZd730U9rcFQ" name="active8">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_r9o1OVSyEeCZd730U9rcFQ" second="1"/>
+    </states>
+    <states xmi:type="State" xmi:id="_r9o1OlSyEeCZd730U9rcFQ" name="active9">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_r9o1O1SyEeCZd730U9rcFQ" second="1"/>
+    </states>
+    <variables xmi:type="Variable" xmi:id="_r9o1PFSyEeCZd730U9rcFQ" name="A">
+      <defaultValue xmi:type="Constant" xmi:id="_r9o1PVSyEeCZd730U9rcFQ" value="7"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_r9o1PlSyEeCZd730U9rcFQ" name="B">
+      <defaultValue xmi:type="Constant" xmi:id="_r9o1P1SyEeCZd730U9rcFQ" value="8"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_r9o1QFSyEeCZd730U9rcFQ" name="C">
+      <defaultValue xmi:type="Constant" xmi:id="_r9o1QVSyEeCZd730U9rcFQ" value="9"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_r9o1QlSyEeCZd730U9rcFQ" name="D">
+      <defaultValue xmi:type="Constant" xmi:id="_r9o1Q1SyEeCZd730U9rcFQ"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_r9o1RFSyEeCZd730U9rcFQ" name="E">
+      <defaultValue xmi:type="Constant" xmi:id="_r9o1RVSyEeCZd730U9rcFQ" value="2"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_r9o1RlSyEeCZd730U9rcFQ" name="F">
+      <defaultValue xmi:type="Constant" xmi:id="_r9o1R1SyEeCZd730U9rcFQ" value="3"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_r9o1SFSyEeCZd730U9rcFQ" name="G">
+      <defaultValue xmi:type="Constant" xmi:id="_r9o1SVSyEeCZd730U9rcFQ" value="4"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_r9o1SlSyEeCZd730U9rcFQ" name="H">
+      <defaultValue xmi:type="Constant" xmi:id="_r9o1S1SyEeCZd730U9rcFQ" value="5"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_r9o1TFSyEeCZd730U9rcFQ" name="I">
+      <defaultValue xmi:type="Constant" xmi:id="_r9o1TVSyEeCZd730U9rcFQ" value="6"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_r9o1TlSyEeCZd730U9rcFQ" name="destAddr">
+      <defaultValue xmi:type="Constant" xmi:id="_r9o1T1SyEeCZd730U9rcFQ" value="0"/>
+    </variables>
+    <links xmi:type="ExternalTransition" xmi:id="_r9o1UFSyEeCZd730U9rcFQ" target="_r9o1KFSyEeCZd730U9rcFQ" source="_r9o1JlSyEeCZd730U9rcFQ">
+      <condition xmi:type="Condition" xmi:id="_r9o1UVSyEeCZd730U9rcFQ">
+        <expression xmi:type="AndFunction" xmi:id="_r9o1UlSyEeCZd730U9rcFQ" parameters="_r9o1U1SyEeCZd730U9rcFQ _r9o1VlSyEeCZd730U9rcFQ">
+          <containedParameters xmi:type="LessFunction" xmi:id="_r9o1U1SyEeCZd730U9rcFQ" parameters="_r9o1VFSyEeCZd730U9rcFQ _r9o1VVSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1VFSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+            <containedParameters xmi:type="Constant" xmi:id="_r9o1VVSyEeCZd730U9rcFQ" value="99"/>
+          </containedParameters>
+          <containedParameters xmi:type="EqualFunction" xmi:id="_r9o1VlSyEeCZd730U9rcFQ" parameters="_r9o1V1SyEeCZd730U9rcFQ _r9o1PFSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1V1SyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+          </containedParameters>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_r9o1WFSyEeCZd730U9rcFQ"/>
+      </condition>
+      <actions xmi:type="Action" xmi:id="_r9o1WVSyEeCZd730U9rcFQ" variable="_r9o1TlSyEeCZd730U9rcFQ" expression="_r9o1WlSyEeCZd730U9rcFQ">
+        <containedExpression xmi:type="ValueFunction" xmi:id="_r9o1WlSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+      </actions>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_r9o1W1SyEeCZd730U9rcFQ" target="_r9o1JlSyEeCZd730U9rcFQ" source="_r9o1KFSyEeCZd730U9rcFQ">
+      <portValues xmi:type="PortValue" xmi:id="_r9o1XFSyEeCZd730U9rcFQ" port="_r9o1IlSyEeCZd730U9rcFQ" value="_r9o1TlSyEeCZd730U9rcFQ"/>
+    </links>
+    <links xmi:type="ExternalTransition" xmi:id="_r9o1XVSyEeCZd730U9rcFQ" target="_r9o1JlSyEeCZd730U9rcFQ" source="_r9o1JlSyEeCZd730U9rcFQ">
+      <condition xmi:type="Condition" xmi:id="_r9o1XlSyEeCZd730U9rcFQ">
+        <expression xmi:type="GreaterFunction" xmi:id="_r9o1X1SyEeCZd730U9rcFQ" parameters="_r9o1YFSyEeCZd730U9rcFQ _r9o1YVSyEeCZd730U9rcFQ">
+          <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1YFSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+          <containedParameters xmi:type="Constant" xmi:id="_r9o1YVSyEeCZd730U9rcFQ" value="99"/>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_r9o1YlSyEeCZd730U9rcFQ"/>
+      </condition>
+    </links>
+    <links xmi:type="ExternalTransition" xmi:id="_r9o1Y1SyEeCZd730U9rcFQ" target="_r9o1KlSyEeCZd730U9rcFQ" source="_r9o1JlSyEeCZd730U9rcFQ">
+      <condition xmi:type="Condition" xmi:id="_r9o1ZFSyEeCZd730U9rcFQ">
+        <expression xmi:type="AndFunction" xmi:id="_r9o1ZVSyEeCZd730U9rcFQ" parameters="_r9o1ZlSyEeCZd730U9rcFQ _r9o1aVSyEeCZd730U9rcFQ">
+          <containedParameters xmi:type="LessFunction" xmi:id="_r9o1ZlSyEeCZd730U9rcFQ" parameters="_r9o1Z1SyEeCZd730U9rcFQ _r9o1aFSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1Z1SyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+            <containedParameters xmi:type="Constant" xmi:id="_r9o1aFSyEeCZd730U9rcFQ" value="99"/>
+          </containedParameters>
+          <containedParameters xmi:type="EqualFunction" xmi:id="_r9o1aVSyEeCZd730U9rcFQ" parameters="_r9o1alSyEeCZd730U9rcFQ _r9o1SFSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1alSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+          </containedParameters>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_r9o1a1SyEeCZd730U9rcFQ"/>
+      </condition>
+      <actions xmi:type="Action" xmi:id="_r9o1bFSyEeCZd730U9rcFQ" variable="_r9o1TlSyEeCZd730U9rcFQ" expression="_r9o1bVSyEeCZd730U9rcFQ">
+        <containedExpression xmi:type="ValueFunction" xmi:id="_r9o1bVSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+      </actions>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_r9o1blSyEeCZd730U9rcFQ" target="_r9o1JlSyEeCZd730U9rcFQ" source="_r9o1KlSyEeCZd730U9rcFQ">
+      <portValues xmi:type="PortValue" xmi:id="_r9o1b1SyEeCZd730U9rcFQ" port="_r9o1JFSyEeCZd730U9rcFQ" value="_r9o1TlSyEeCZd730U9rcFQ"/>
+    </links>
+    <links xmi:type="ExternalTransition" xmi:id="_r9o1cFSyEeCZd730U9rcFQ" target="_r9o1LFSyEeCZd730U9rcFQ" source="_r9o1JlSyEeCZd730U9rcFQ">
+      <condition xmi:type="Condition" xmi:id="_r9o1cVSyEeCZd730U9rcFQ">
+        <expression xmi:type="AndFunction" xmi:id="_r9o1clSyEeCZd730U9rcFQ" parameters="_r9o1c1SyEeCZd730U9rcFQ _r9o1dlSyEeCZd730U9rcFQ">
+          <containedParameters xmi:type="LessFunction" xmi:id="_r9o1c1SyEeCZd730U9rcFQ" parameters="_r9o1dFSyEeCZd730U9rcFQ _r9o1dVSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1dFSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+            <containedParameters xmi:type="Constant" xmi:id="_r9o1dVSyEeCZd730U9rcFQ" value="99"/>
+          </containedParameters>
+          <containedParameters xmi:type="EqualFunction" xmi:id="_r9o1dlSyEeCZd730U9rcFQ" parameters="_r9o1d1SyEeCZd730U9rcFQ _r9o1QlSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1d1SyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+          </containedParameters>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_r9o1eFSyEeCZd730U9rcFQ"/>
+      </condition>
+      <actions xmi:type="Action" xmi:id="_r9o1eVSyEeCZd730U9rcFQ" variable="_r9o1TlSyEeCZd730U9rcFQ" expression="_r9o1elSyEeCZd730U9rcFQ">
+        <containedExpression xmi:type="ValueFunction" xmi:id="_r9o1elSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+      </actions>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_r9o1e1SyEeCZd730U9rcFQ" target="_r9o1JlSyEeCZd730U9rcFQ" source="_r9o1LFSyEeCZd730U9rcFQ">
+      <portValues xmi:type="PortValue" xmi:id="_r9o1fFSyEeCZd730U9rcFQ" port="_r9o1I1SyEeCZd730U9rcFQ" value="_r9o1TlSyEeCZd730U9rcFQ"/>
+    </links>
+    <links xmi:type="ExternalTransition" xmi:id="_r9o1fVSyEeCZd730U9rcFQ" target="_r9o1LlSyEeCZd730U9rcFQ" source="_r9o1JlSyEeCZd730U9rcFQ">
+      <condition xmi:type="Condition" xmi:id="_r9o1flSyEeCZd730U9rcFQ">
+        <expression xmi:type="AndFunction" xmi:id="_r9o1f1SyEeCZd730U9rcFQ" parameters="_r9o1gFSyEeCZd730U9rcFQ _r9o1g1SyEeCZd730U9rcFQ">
+          <containedParameters xmi:type="GreaterFunction" xmi:id="_r9o1gFSyEeCZd730U9rcFQ" parameters="_r9o1gVSyEeCZd730U9rcFQ _r9o1glSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1gVSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+            <containedParameters xmi:type="Constant" xmi:id="_r9o1glSyEeCZd730U9rcFQ" value="9"/>
+          </containedParameters>
+          <containedParameters xmi:type="LessFunction" xmi:id="_r9o1g1SyEeCZd730U9rcFQ" parameters="_r9o1hFSyEeCZd730U9rcFQ _r9o1hVSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1hFSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+            <containedParameters xmi:type="Constant" xmi:id="_r9o1hVSyEeCZd730U9rcFQ" value="99"/>
+          </containedParameters>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_r9o1hlSyEeCZd730U9rcFQ"/>
+      </condition>
+      <actions xmi:type="Action" xmi:id="_r9o1h1SyEeCZd730U9rcFQ" variable="_r9o1TlSyEeCZd730U9rcFQ" expression="_r9o1iFSyEeCZd730U9rcFQ">
+        <containedExpression xmi:type="ValueFunction" xmi:id="_r9o1iFSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+      </actions>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_r9o1iVSyEeCZd730U9rcFQ" target="_r9o1JlSyEeCZd730U9rcFQ" source="_r9o1LlSyEeCZd730U9rcFQ">
+      <portValues xmi:type="PortValue" xmi:id="_r9o1ilSyEeCZd730U9rcFQ" port="_r9o1JVSyEeCZd730U9rcFQ" value="_r9o1TlSyEeCZd730U9rcFQ"/>
+    </links>
+    <links xmi:type="ExternalTransition" xmi:id="_r9o1i1SyEeCZd730U9rcFQ" target="_r9o1MFSyEeCZd730U9rcFQ" source="_r9o1JlSyEeCZd730U9rcFQ">
+      <condition xmi:type="Condition" xmi:id="_r9o1jFSyEeCZd730U9rcFQ">
+        <expression xmi:type="AndFunction" xmi:id="_r9o1jVSyEeCZd730U9rcFQ" parameters="_r9o1jlSyEeCZd730U9rcFQ _r9o1kVSyEeCZd730U9rcFQ">
+          <containedParameters xmi:type="LessFunction" xmi:id="_r9o1jlSyEeCZd730U9rcFQ" parameters="_r9o1j1SyEeCZd730U9rcFQ _r9o1kFSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1j1SyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+            <containedParameters xmi:type="Constant" xmi:id="_r9o1kFSyEeCZd730U9rcFQ" value="99"/>
+          </containedParameters>
+          <containedParameters xmi:type="EqualFunction" xmi:id="_r9o1kVSyEeCZd730U9rcFQ" parameters="_r9o1klSyEeCZd730U9rcFQ _r9o1PlSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1klSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+          </containedParameters>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_r9o1k1SyEeCZd730U9rcFQ"/>
+      </condition>
+      <actions xmi:type="Action" xmi:id="_r9o1lFSyEeCZd730U9rcFQ" variable="_r9o1TlSyEeCZd730U9rcFQ" expression="_r9o1lVSyEeCZd730U9rcFQ">
+        <containedExpression xmi:type="ValueFunction" xmi:id="_r9o1lVSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+      </actions>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_r9o1llSyEeCZd730U9rcFQ" target="_r9o1JlSyEeCZd730U9rcFQ" source="_r9o1MFSyEeCZd730U9rcFQ">
+      <portValues xmi:type="PortValue" xmi:id="_r9o1l1SyEeCZd730U9rcFQ" port="_r9o1IlSyEeCZd730U9rcFQ" value="_r9o1TlSyEeCZd730U9rcFQ"/>
+    </links>
+    <links xmi:type="ExternalTransition" xmi:id="_r9o1mFSyEeCZd730U9rcFQ" target="_r9o1MlSyEeCZd730U9rcFQ" source="_r9o1JlSyEeCZd730U9rcFQ">
+      <condition xmi:type="Condition" xmi:id="_r9o1mVSyEeCZd730U9rcFQ">
+        <expression xmi:type="AndFunction" xmi:id="_r9o1mlSyEeCZd730U9rcFQ" parameters="_r9o1m1SyEeCZd730U9rcFQ _r9o1nlSyEeCZd730U9rcFQ">
+          <containedParameters xmi:type="LessFunction" xmi:id="_r9o1m1SyEeCZd730U9rcFQ" parameters="_r9o1nFSyEeCZd730U9rcFQ _r9o1nVSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1nFSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+            <containedParameters xmi:type="Constant" xmi:id="_r9o1nVSyEeCZd730U9rcFQ" value="99"/>
+          </containedParameters>
+          <containedParameters xmi:type="EqualFunction" xmi:id="_r9o1nlSyEeCZd730U9rcFQ" parameters="_r9o1n1SyEeCZd730U9rcFQ _r9o1QFSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1n1SyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+          </containedParameters>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_r9o1oFSyEeCZd730U9rcFQ"/>
+      </condition>
+      <actions xmi:type="Action" xmi:id="_r9o1oVSyEeCZd730U9rcFQ" variable="_r9o1TlSyEeCZd730U9rcFQ" expression="_r9o1olSyEeCZd730U9rcFQ">
+        <containedExpression xmi:type="ValueFunction" xmi:id="_r9o1olSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+      </actions>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_r9o1o1SyEeCZd730U9rcFQ" target="_r9o1JlSyEeCZd730U9rcFQ" source="_r9o1MlSyEeCZd730U9rcFQ">
+      <portValues xmi:type="PortValue" xmi:id="_r9o1pFSyEeCZd730U9rcFQ" port="_r9o1IlSyEeCZd730U9rcFQ" value="_r9o1TlSyEeCZd730U9rcFQ"/>
+    </links>
+    <links xmi:type="ExternalTransition" xmi:id="_r9o1pVSyEeCZd730U9rcFQ" target="_r9o1NFSyEeCZd730U9rcFQ" source="_r9o1JlSyEeCZd730U9rcFQ">
+      <condition xmi:type="Condition" xmi:id="_r9o1plSyEeCZd730U9rcFQ">
+        <expression xmi:type="AndFunction" xmi:id="_r9o1p1SyEeCZd730U9rcFQ" parameters="_r9o1qFSyEeCZd730U9rcFQ _r9o1q1SyEeCZd730U9rcFQ">
+          <containedParameters xmi:type="LessFunction" xmi:id="_r9o1qFSyEeCZd730U9rcFQ" parameters="_r9o1qVSyEeCZd730U9rcFQ _r9o1qlSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1qVSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+            <containedParameters xmi:type="Constant" xmi:id="_r9o1qlSyEeCZd730U9rcFQ" value="99"/>
+          </containedParameters>
+          <containedParameters xmi:type="EqualFunction" xmi:id="_r9o1q1SyEeCZd730U9rcFQ" parameters="_r9o1rFSyEeCZd730U9rcFQ _r9o1RFSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1rFSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+          </containedParameters>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_r9o1rVSyEeCZd730U9rcFQ"/>
+      </condition>
+      <actions xmi:type="Action" xmi:id="_r9o1rlSyEeCZd730U9rcFQ" variable="_r9o1TlSyEeCZd730U9rcFQ" expression="_r9o1r1SyEeCZd730U9rcFQ">
+        <containedExpression xmi:type="ValueFunction" xmi:id="_r9o1r1SyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+      </actions>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_r9o1sFSyEeCZd730U9rcFQ" target="_r9o1JlSyEeCZd730U9rcFQ" source="_r9o1NFSyEeCZd730U9rcFQ">
+      <portValues xmi:type="PortValue" xmi:id="_r9o1sVSyEeCZd730U9rcFQ" port="_r9o1I1SyEeCZd730U9rcFQ" value="_r9o1TlSyEeCZd730U9rcFQ"/>
+    </links>
+    <links xmi:type="ExternalTransition" xmi:id="_r9o1slSyEeCZd730U9rcFQ" target="_r9o1NlSyEeCZd730U9rcFQ" source="_r9o1JlSyEeCZd730U9rcFQ">
+      <condition xmi:type="Condition" xmi:id="_r9o1s1SyEeCZd730U9rcFQ">
+        <expression xmi:type="AndFunction" xmi:id="_r9o1tFSyEeCZd730U9rcFQ" parameters="_r9o1tVSyEeCZd730U9rcFQ _r9o1uFSyEeCZd730U9rcFQ">
+          <containedParameters xmi:type="LessFunction" xmi:id="_r9o1tVSyEeCZd730U9rcFQ" parameters="_r9o1tlSyEeCZd730U9rcFQ _r9o1t1SyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1tlSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+            <containedParameters xmi:type="Constant" xmi:id="_r9o1t1SyEeCZd730U9rcFQ" value="99"/>
+          </containedParameters>
+          <containedParameters xmi:type="EqualFunction" xmi:id="_r9o1uFSyEeCZd730U9rcFQ" parameters="_r9o1uVSyEeCZd730U9rcFQ _r9o1RlSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1uVSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+          </containedParameters>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_r9o1ulSyEeCZd730U9rcFQ"/>
+      </condition>
+      <actions xmi:type="Action" xmi:id="_r9o1u1SyEeCZd730U9rcFQ" variable="_r9o1TlSyEeCZd730U9rcFQ" expression="_r9o1vFSyEeCZd730U9rcFQ">
+        <containedExpression xmi:type="ValueFunction" xmi:id="_r9o1vFSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+      </actions>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_r9o1vVSyEeCZd730U9rcFQ" target="_r9o1JlSyEeCZd730U9rcFQ" source="_r9o1NlSyEeCZd730U9rcFQ">
+      <portValues xmi:type="PortValue" xmi:id="_r9o1vlSyEeCZd730U9rcFQ" port="_r9o1I1SyEeCZd730U9rcFQ" value="_r9o1TlSyEeCZd730U9rcFQ"/>
+    </links>
+    <links xmi:type="ExternalTransition" xmi:id="_r9o1v1SyEeCZd730U9rcFQ" target="_r9o1OFSyEeCZd730U9rcFQ" source="_r9o1JlSyEeCZd730U9rcFQ">
+      <condition xmi:type="Condition" xmi:id="_r9o1wFSyEeCZd730U9rcFQ">
+        <expression xmi:type="AndFunction" xmi:id="_r9o1wVSyEeCZd730U9rcFQ" parameters="_r9o1wlSyEeCZd730U9rcFQ _r9o1xVSyEeCZd730U9rcFQ">
+          <containedParameters xmi:type="LessFunction" xmi:id="_r9o1wlSyEeCZd730U9rcFQ" parameters="_r9o1w1SyEeCZd730U9rcFQ _r9o1xFSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1w1SyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+            <containedParameters xmi:type="Constant" xmi:id="_r9o1xFSyEeCZd730U9rcFQ" value="99"/>
+          </containedParameters>
+          <containedParameters xmi:type="EqualFunction" xmi:id="_r9o1xVSyEeCZd730U9rcFQ" parameters="_r9o1xlSyEeCZd730U9rcFQ _r9o1SlSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o1xlSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+          </containedParameters>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_r9o1x1SyEeCZd730U9rcFQ"/>
+      </condition>
+      <actions xmi:type="Action" xmi:id="_r9o1yFSyEeCZd730U9rcFQ" variable="_r9o1TlSyEeCZd730U9rcFQ" expression="_r9o1yVSyEeCZd730U9rcFQ">
+        <containedExpression xmi:type="ValueFunction" xmi:id="_r9o1yVSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+      </actions>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_r9o1ylSyEeCZd730U9rcFQ" target="_r9o1JlSyEeCZd730U9rcFQ" source="_r9o1OFSyEeCZd730U9rcFQ">
+      <portValues xmi:type="PortValue" xmi:id="_r9o1y1SyEeCZd730U9rcFQ" port="_r9o1JFSyEeCZd730U9rcFQ" value="_r9o1TlSyEeCZd730U9rcFQ"/>
+    </links>
+    <links xmi:type="ExternalTransition" xmi:id="_r9o1zFSyEeCZd730U9rcFQ" target="_r9o1OlSyEeCZd730U9rcFQ" source="_r9o1JlSyEeCZd730U9rcFQ">
+      <condition xmi:type="Condition" xmi:id="_r9o1zVSyEeCZd730U9rcFQ">
+        <expression xmi:type="AndFunction" xmi:id="_r9o1zlSyEeCZd730U9rcFQ" parameters="_r9o1z1SyEeCZd730U9rcFQ _r9o10lSyEeCZd730U9rcFQ">
+          <containedParameters xmi:type="LessFunction" xmi:id="_r9o1z1SyEeCZd730U9rcFQ" parameters="_r9o10FSyEeCZd730U9rcFQ _r9o10VSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o10FSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+            <containedParameters xmi:type="Constant" xmi:id="_r9o10VSyEeCZd730U9rcFQ" value="99"/>
+          </containedParameters>
+          <containedParameters xmi:type="EqualFunction" xmi:id="_r9o10lSyEeCZd730U9rcFQ" parameters="_r9o101SyEeCZd730U9rcFQ _r9o1TFSyEeCZd730U9rcFQ">
+            <containedParameters xmi:type="ValueFunction" xmi:id="_r9o101SyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+          </containedParameters>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_r9o11FSyEeCZd730U9rcFQ"/>
+      </condition>
+      <actions xmi:type="Action" xmi:id="_r9o11VSyEeCZd730U9rcFQ" variable="_r9o1TlSyEeCZd730U9rcFQ" expression="_r9o11lSyEeCZd730U9rcFQ">
+        <containedExpression xmi:type="ValueFunction" xmi:id="_r9o11lSyEeCZd730U9rcFQ" parameters="_r9o1IVSyEeCZd730U9rcFQ"/>
+      </actions>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_r9o111SyEeCZd730U9rcFQ" target="_r9o1JlSyEeCZd730U9rcFQ" source="_r9o1OlSyEeCZd730U9rcFQ">
+      <portValues xmi:type="PortValue" xmi:id="_r9o12FSyEeCZd730U9rcFQ" port="_r9o1JFSyEeCZd730U9rcFQ" value="_r9o1TlSyEeCZd730U9rcFQ"/>
+    </links>
+  </GGADAtomicModelType>
+  <notation:Diagram xmi:id="_r9o12VSyEeCZd730U9rcFQ" type="DEVSGGAD" element="_r9o1IFSyEeCZd730U9rcFQ" name="WANswitch3.ggaddesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_r9o12lSyEeCZd730U9rcFQ"/>
+  </notation:Diagram>
+</xmi:XMI>

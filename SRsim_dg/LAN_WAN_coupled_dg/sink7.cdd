@@ -1,0 +1,13 @@
+[Top]
+in:packetIn 
+out:packetsReceived 
+var:packets myAddr 
+state:idle active 
+initial:idle
+ext:idle active Equal(Value(packetIn),myAddr)?1{packets=Add(packets,1);}
+int:active idle packetsReceived!packets 
+ext:idle idle NotEqual(Value(packetIn),myAddr)?1
+idle:99:99:99:99
+active:00:00:01:00
+packets:0
+myAddr:7

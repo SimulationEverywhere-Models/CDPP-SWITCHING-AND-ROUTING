@@ -1,0 +1,24 @@
+[Top]
+in:switchIn 
+out:switchOut1 switchOut2 switchOut3 gateWay 
+var:OneAddr TwoAddr ThreeAddr destAddr 
+state:idle active1 active2 active3 active4 
+initial:idle
+ext:idle active1 And(Less(Value(switchIn),99),Equal(Value(switchIn),OneAddr))?1{destAddr=Value(switchIn);}
+int:active1 idle switchOut1!destAddr 
+ext:idle active2 And(Less(Value(switchIn),99),Equal(Value(switchIn),TwoAddr))?1{destAddr=Value(switchIn);}
+int:active2 idle switchOut2!destAddr 
+ext:idle active3 And(Less(Value(switchIn),99),Equal(Value(switchIn),ThreeAddr))?1{destAddr=Value(switchIn);}
+int:active3 idle switchOut3!destAddr 
+ext:idle active4 Or(Less(Value(switchIn),OneAddr),Greater(Value(switchIn),ThreeAddr))?1{destAddr=Value(switchIn);}
+int:active4 idle gateWay!destAddr 
+ext:idle idle Greater(Value(switchIn),99)?1
+idle:99:99:99:99
+active1:00:00:01:00
+active2:00:00:01:00
+active3:00:00:01:00
+active4:00:00:01:00
+OneAddr:1
+TwoAddr:2
+ThreeAddr:3
+destAddr:0

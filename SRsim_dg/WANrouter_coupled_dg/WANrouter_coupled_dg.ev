@@ -1,0 +1,12 @@
+00:00:10:000 routerIn1 4
+00:00:20:000 routerIn2 5
+00:00:30:000 routerIn3 6
+00:00:40:000 routerIn3 7
+00:00:50:000 routerIn2 8
+00:01:00:000 routerIn1 9
+00:01:10:000 routerIn1 7
+00:01:20:000 routerIn1 5
+00:01:30:000 routerIn2 6
+00:01:40:000 routerIn2 10
+00:01:50:000 routerIn3 15
+00:02:00:000 routerIn3 18

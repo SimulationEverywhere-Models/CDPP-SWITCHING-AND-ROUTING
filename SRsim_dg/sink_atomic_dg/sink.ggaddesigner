@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <GGADAtomicModelType xmi:id="_NXHRgEILEeCx6_uCKnbEKA" sourceFileRelativePath="Top.cdd" initialState="_8hfiwEILEeCx6_uCKnbEKA">
+    <ports xmi:type="InputAtomicPort" xmi:id="_OTdlAEILEeCx6_uCKnbEKA" portName="packetIn"/>
+    <ports xmi:type="OutputAtomicPort" xmi:id="_PYAyQEILEeCx6_uCKnbEKA" portName="packetsReceived" portType="OUTPUT_PORT"/>
+    <states xmi:type="State" xmi:id="_8hfiwEILEeCx6_uCKnbEKA" name="idle">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_8hfiwUILEeCx6_uCKnbEKA" hour="99" minute="99" second="99" millisecond="99"/>
+    </states>
+    <states xmi:type="State" xmi:id="_DgricEIMEeCx6_uCKnbEKA" name="active">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_DgricUIMEeCx6_uCKnbEKA" second="1"/>
+    </states>
+    <variables xmi:type="Variable" xmi:id="_3jf-wEILEeCx6_uCKnbEKA" name="packets">
+      <defaultValue xmi:type="Constant" xmi:id="_3jf-wUILEeCx6_uCKnbEKA" value="0"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_g8VIIEIMEeCx6_uCKnbEKA" name="myAddr">
+      <defaultValue xmi:type="Constant" xmi:id="_g8VIIUIMEeCx6_uCKnbEKA"/>
+    </variables>
+    <links xmi:type="ExternalTransition" xmi:id="_TNTzYEIMEeCx6_uCKnbEKA" target="_DgricEIMEeCx6_uCKnbEKA" source="_8hfiwEILEeCx6_uCKnbEKA">
+      <condition xmi:type="Condition" xmi:id="_TndiUEIYEeCx6_uCKnbEKA">
+        <expression xmi:type="EqualFunction" xmi:id="_TndiUUIYEeCx6_uCKnbEKA" parameters="_TndiUkIYEeCx6_uCKnbEKA _g8VIIEIMEeCx6_uCKnbEKA">
+          <containedParameters xmi:type="ValueFunction" xmi:id="_TndiUkIYEeCx6_uCKnbEKA" parameters="_OTdlAEILEeCx6_uCKnbEKA"/>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_TndiU0IYEeCx6_uCKnbEKA"/>
+      </condition>
+      <actions xmi:type="Action" xmi:id="_Sf3sUEIREeCx6_uCKnbEKA" variable="_3jf-wEILEeCx6_uCKnbEKA" expression="_Sf3sUUIREeCx6_uCKnbEKA">
+        <containedExpression xmi:type="AddFunction" xmi:id="_Sf3sUUIREeCx6_uCKnbEKA" parameters="_3jf-wEILEeCx6_uCKnbEKA _Sf3sUkIREeCx6_uCKnbEKA">
+          <containedParameters xmi:type="Constant" xmi:id="_Sf3sUkIREeCx6_uCKnbEKA"/>
+        </containedExpression>
+      </actions>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_J8bBYEINEeCx6_uCKnbEKA" target="_8hfiwEILEeCx6_uCKnbEKA" source="_DgricEIMEeCx6_uCKnbEKA">
+      <portValues xmi:type="PortValue" xmi:id="_NgtngEINEeCx6_uCKnbEKA" port="_PYAyQEILEeCx6_uCKnbEKA" value="_3jf-wEILEeCx6_uCKnbEKA"/>
+    </links>
+    <links xmi:type="ExternalTransition" xmi:id="_fr0VsELAEeCOS9vQqZadmg" target="_8hfiwEILEeCx6_uCKnbEKA" source="_8hfiwEILEeCx6_uCKnbEKA">
+      <condition xmi:type="Condition" xmi:id="_jAKbUELAEeCOS9vQqZadmg">
+        <expression xmi:type="NotEqualFunction" xmi:id="_jAKbUULAEeCOS9vQqZadmg" parameters="_jAKbUkLAEeCOS9vQqZadmg _g8VIIEIMEeCx6_uCKnbEKA">
+          <containedParameters xmi:type="ValueFunction" xmi:id="_jAKbUkLAEeCOS9vQqZadmg" parameters="_OTdlAEILEeCx6_uCKnbEKA"/>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_jAKbU0LAEeCOS9vQqZadmg"/>
+      </condition>
+    </links>
+  </GGADAtomicModelType>
+  <notation:Diagram xmi:id="_NXHRgUILEeCx6_uCKnbEKA" type="DEVSGGAD" element="_NXHRgEILEeCx6_uCKnbEKA" name="sinkType.ggaddesigner" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_OTnWAEILEeCx6_uCKnbEKA" type="2002" element="_OTdlAEILEeCx6_uCKnbEKA">
+      <children xmi:type="notation:Node" xmi:id="_OTnWBUILEeCx6_uCKnbEKA" type="5002"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_OTnWAUILEeCx6_uCKnbEKA"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_OTnWAkILEeCx6_uCKnbEKA"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_OTnWA0ILEeCx6_uCKnbEKA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OTnWBEILEeCx6_uCKnbEKA" x="41" y="37"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_PYAyQUILEeCx6_uCKnbEKA" type="2003" element="_PYAyQEILEeCx6_uCKnbEKA">
+      <children xmi:type="notation:Node" xmi:id="_PYAyRkILEeCx6_uCKnbEKA" type="5003"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_PYAyQkILEeCx6_uCKnbEKA"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_PYAyQ0ILEeCx6_uCKnbEKA"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_PYAyREILEeCx6_uCKnbEKA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PYAyRUILEeCx6_uCKnbEKA" x="297" y="42"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_3jpvwEILEeCx6_uCKnbEKA" type="2004" element="_3jf-wEILEeCx6_uCKnbEKA">
+      <children xmi:type="notation:Node" xmi:id="_3jpvw0ILEeCx6_uCKnbEKA" type="5004"/>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_3jpvwUILEeCx6_uCKnbEKA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3jpvwkILEeCx6_uCKnbEKA" x="144" y="12"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_8hfiwkILEeCx6_uCKnbEKA" type="2001" element="_8hfiwEILEeCx6_uCKnbEKA">
+      <children xmi:type="notation:Node" xmi:id="_8hfix0ILEeCx6_uCKnbEKA" type="5001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_8hfiw0ILEeCx6_uCKnbEKA"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_8hfixEILEeCx6_uCKnbEKA"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_8hfixUILEeCx6_uCKnbEKA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8hfixkILEeCx6_uCKnbEKA" x="156" y="288"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_DgrickIMEeCx6_uCKnbEKA" type="2001" element="_DgricEIMEeCx6_uCKnbEKA">
+      <children xmi:type="notation:Node" xmi:id="_Dgrid0IMEeCx6_uCKnbEKA" type="5001"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_Dgric0IMEeCx6_uCKnbEKA"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_DgridEIMEeCx6_uCKnbEKA"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_DgridUIMEeCx6_uCKnbEKA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_DgridkIMEeCx6_uCKnbEKA" x="144" y="132"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_g8VIIkIMEeCx6_uCKnbEKA" type="2004" element="_g8VIIEIMEeCx6_uCKnbEKA">
+      <children xmi:type="notation:Node" xmi:id="_g8VIJUIMEeCx6_uCKnbEKA" type="5004"/>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_g8VII0IMEeCx6_uCKnbEKA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g8VIJEIMEeCx6_uCKnbEKA" x="132" y="36"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_NXHRgkILEeCx6_uCKnbEKA"/>
+    <edges xmi:type="notation:Edge" xmi:id="_TNTzYUIMEeCx6_uCKnbEKA" type="4001" element="_TNTzYEIMEeCx6_uCKnbEKA" source="_8hfiwkILEeCx6_uCKnbEKA" target="_DgrickIMEeCx6_uCKnbEKA">
+      <styles xmi:type="notation:ConnectorStyle" xmi:id="_TNTzYkIMEeCx6_uCKnbEKA" routing="Rectilinear"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_TNTzY0IMEeCx6_uCKnbEKA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_TNTzZEIMEeCx6_uCKnbEKA" points="[-6, -40, 6, 116]$[-29, -116, -17, 40]"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_J8kyYEINEeCx6_uCKnbEKA" type="4002" element="_J8bBYEINEeCx6_uCKnbEKA" source="_DgrickIMEeCx6_uCKnbEKA" target="_8hfiwkILEeCx6_uCKnbEKA">
+      <styles xmi:type="notation:ConnectorStyle" xmi:id="_J8kyYUINEeCx6_uCKnbEKA" routing="Rectilinear"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_J8kyYkINEeCx6_uCKnbEKA"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_J8kyY0INEeCx6_uCKnbEKA" points="[2, 19, -13, -92]$[0, 95, -15, -16]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J8kyZEINEeCx6_uCKnbEKA" id="(0.20930232558139536,0.7625)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J8kyZUINEeCx6_uCKnbEKA" id="(0.2441860465116279,0.2)"/>
+    </edges>
+    <edges xmi:type="notation:Edge" xmi:id="_fr-GsELAEeCOS9vQqZadmg" type="4001" element="_fr0VsELAEeCOS9vQqZadmg" source="_8hfiwkILEeCx6_uCKnbEKA" target="_8hfiwkILEeCx6_uCKnbEKA">
+      <styles xmi:type="notation:ConnectorStyle" xmi:id="_fr-GsULAEeCOS9vQqZadmg" routing="Rectilinear"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_fr-GskLAEeCOS9vQqZadmg"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fr-Gs0LAEeCOS9vQqZadmg" points="[0, 41, 0, 29]$[16, 18, 16, 6]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fr-GtELAEeCOS9vQqZadmg" id="(0.813953488372093,0.4875)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fr-GtULAEeCOS9vQqZadmg" id="(0.813953488372093,0.6375)"/>
+    </edges>
+  </notation:Diagram>
+</xmi:XMI>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <GGADAtomicModelType xmi:id="_1st3pFS0EeCZd730U9rcFQ" defined="true" sourceFileRelativePath="sink4.cdd" initialState="_1st3p1S0EeCZd730U9rcFQ">
+    <ports xmi:type="InputAtomicPort" xmi:id="_1st3pVS0EeCZd730U9rcFQ" portName="packetIn"/>
+    <ports xmi:type="OutputAtomicPort" xmi:id="_1st3plS0EeCZd730U9rcFQ" portName="packetsReceived" portType="OUTPUT_PORT"/>
+    <states xmi:type="State" xmi:id="_1st3p1S0EeCZd730U9rcFQ" name="idle">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_1st3qFS0EeCZd730U9rcFQ" hour="99" minute="99" second="99" millisecond="99"/>
+    </states>
+    <states xmi:type="State" xmi:id="_1st3qVS0EeCZd730U9rcFQ" name="active">
+      <timeAdvance xmi:type="TimeAdvance" xmi:id="_1st3qlS0EeCZd730U9rcFQ" second="1"/>
+    </states>
+    <variables xmi:type="Variable" xmi:id="_1st3q1S0EeCZd730U9rcFQ" name="packets">
+      <defaultValue xmi:type="Constant" xmi:id="_1st3rFS0EeCZd730U9rcFQ" value="0"/>
+    </variables>
+    <variables xmi:type="Variable" xmi:id="_1st3rVS0EeCZd730U9rcFQ" name="myAddr">
+      <defaultValue xmi:type="Constant" xmi:id="_1st3rlS0EeCZd730U9rcFQ" value="4"/>
+    </variables>
+    <links xmi:type="ExternalTransition" xmi:id="_1st3r1S0EeCZd730U9rcFQ" target="_1st3qVS0EeCZd730U9rcFQ" source="_1st3p1S0EeCZd730U9rcFQ">
+      <condition xmi:type="Condition" xmi:id="_1st3sFS0EeCZd730U9rcFQ">
+        <expression xmi:type="EqualFunction" xmi:id="_1st3sVS0EeCZd730U9rcFQ" parameters="_1st3slS0EeCZd730U9rcFQ _1st3rVS0EeCZd730U9rcFQ">
+          <containedParameters xmi:type="ValueFunction" xmi:id="_1st3slS0EeCZd730U9rcFQ" parameters="_1st3pVS0EeCZd730U9rcFQ"/>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_1st3s1S0EeCZd730U9rcFQ"/>
+      </condition>
+      <actions xmi:type="Action" xmi:id="_1st3tFS0EeCZd730U9rcFQ" variable="_1st3q1S0EeCZd730U9rcFQ" expression="_1st3tVS0EeCZd730U9rcFQ">
+        <containedExpression xmi:type="AddFunction" xmi:id="_1st3tVS0EeCZd730U9rcFQ" parameters="_1st3q1S0EeCZd730U9rcFQ _1st3tlS0EeCZd730U9rcFQ">
+          <containedParameters xmi:type="Constant" xmi:id="_1st3tlS0EeCZd730U9rcFQ"/>
+        </containedExpression>
+      </actions>
+    </links>
+    <links xmi:type="InternalTransition" xmi:id="_1st3t1S0EeCZd730U9rcFQ" target="_1st3p1S0EeCZd730U9rcFQ" source="_1st3qVS0EeCZd730U9rcFQ">
+      <portValues xmi:type="PortValue" xmi:id="_1st3uFS0EeCZd730U9rcFQ" port="_1st3plS0EeCZd730U9rcFQ" value="_1st3q1S0EeCZd730U9rcFQ"/>
+    </links>
+    <links xmi:type="ExternalTransition" xmi:id="_1st3uVS0EeCZd730U9rcFQ" target="_1st3p1S0EeCZd730U9rcFQ" source="_1st3p1S0EeCZd730U9rcFQ">
+      <condition xmi:type="Condition" xmi:id="_1st3ulS0EeCZd730U9rcFQ">
+        <expression xmi:type="NotEqualFunction" xmi:id="_1st3u1S0EeCZd730U9rcFQ" parameters="_1st3vFS0EeCZd730U9rcFQ _1st3rVS0EeCZd730U9rcFQ">
+          <containedParameters xmi:type="ValueFunction" xmi:id="_1st3vFS0EeCZd730U9rcFQ" parameters="_1st3pVS0EeCZd730U9rcFQ"/>
+        </expression>
+        <value xmi:type="Constant" xmi:id="_1st3vVS0EeCZd730U9rcFQ"/>
+      </condition>
+    </links>
+  </GGADAtomicModelType>
+  <notation:Diagram xmi:id="_1st3vlS0EeCZd730U9rcFQ" type="DEVSGGAD" element="_1st3pFS0EeCZd730U9rcFQ" name="sink4.ggaddesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_1st3v1S0EeCZd730U9rcFQ"/>
+  </notation:Diagram>
+</xmi:XMI>
